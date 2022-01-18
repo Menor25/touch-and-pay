@@ -1,0 +1,23 @@
+.login {
+   width: 50%; 
+   margin-left: auto !important;
+   margin-right: auto !important;    
+   margin-top: 180px;
+   text-align: center;   
+   -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+   padding: 20px;
+   margin-right: 20px;
+   
+}      
+    .navheader{     
+      margin-top: 10px;      
+      color :black !important;      
+      background-color: #b3beca!important      
+    }    
+    .PageHeading      
+    {      
+      margin-top: 10px;      
+      margin-bottom: 10px;      
+      color :black !important;      
+    } 
