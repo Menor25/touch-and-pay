@@ -10,18 +10,18 @@ import Tables from "../../compnents/table/Tables";
 
 import axios from 'axios';
 
+const url = '/user/all';
 function UserList() {
-    const [data, setData] = useState([]);
 
-    const getData = () => {
-        axios.get('/user/all')
-        .then((result) =>{
-            console.log(result);
-            const myData = result.data;
-            setData(myData);
+    const [post, setPost] = React.useState(null);
+
+    React.useEffect(() => {
+        axios.get(url).then((response) => {
+          setPost(response.data);
         });
-    };
-    useEffect(() => getData(), []);
+      }, []);
+
+      if (!post) return null;
 
     
     return (
@@ -45,7 +45,7 @@ function UserList() {
                                     </tr>
                                 </thead>
                                 <tbody>
-
+                                <h1>{post.firstName}</h1>
                                 </tbody>
                             </Table>
                         </CardBody>
