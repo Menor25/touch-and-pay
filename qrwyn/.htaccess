@@ -1,0 +1,10 @@
+# Turn Rewrite Engine On
+RewriteEngine on
+
+# Rewrite for all .php extension files
+RewriteRule ^home$ index.php [NC,L]
+RewriteRule ^shop$ shop.php [NC,L]
+RewriteRule ^about$ about-us.php [NC,L]
+RewriteRule ^contact$ contact-us.php [NC,L]
+RewriteRule ^product$ product-details.php [NC,L]
+
